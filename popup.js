@@ -75,6 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		
 		
 		$('#span-upload').click(function(){
+			// clcik event here
 						
 		});
 		
