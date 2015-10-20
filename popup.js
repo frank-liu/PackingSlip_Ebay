@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			var submitURL = (baseURL + q1ID + "=" + inputq1 + "&" + q2ID + "=" + inputq2 +"&"+ q3ID + "=" + inputq3 +"&"+ q4ID + "=" + inputq4 +"&"+ q5ID + "=" + inputq5 +"&"+ q6ID + "=" + inputq6 +"&"+ q7ID + "=" + inputq7 +"&"+ q8ID + "=" + inputq8 +"&"+ q9ID + "=" + inputq9 +"&"+ q10ID + "=" + inputq10 + submitRef);
 			console.log(submitURL);
 			$(this)[0].action=submitURL;
-			
+			//$('#input-name').addClass('active').val('Thank You!');
 			});
 		}
 		catch(notE)		
@@ -75,61 +75,9 @@ document.addEventListener('DOMContentLoaded', function () {
 		
 		
 		$('#span-upload').click(function(){
-			// clcik event here
 						
 		});
-		
-				
-		/*judge which kind of stamp to use*/
-		/*
-		if(data.item_delivery.indexOf("48")>0 || data.item_delivery.indexOf("2nd")>0)
-		{
-			
-			var elem = document.createElement("img");
-			elem.setAttribute("src", "http://goo.gl/CGKdFR");
-			elem.setAttribute("height", "100%");
-			elem.setAttribute("width", "100%");
-			elem.setAttribute("alt", data.item_delivery);
-			document.getElementById("item_post").appendChild(elem);
-		}
-		else if(data.item_delivery.indexOf("24")>0)
-		{
-			var elem = document.createElement("img");
-			elem.setAttribute("src", "http://goo.gl/OHPyR1");
-			elem.setAttribute("height", "100%");
-			elem.setAttribute("width", "100%");
-			elem.setAttribute("alt", data.item_delivery);
-			document.getElementById("item_post").appendChild(elem);
-		}
-		else if(data.item_delivery.indexOf("inter")>0)
-		{
-			;
-		}
-		*/
-		/*^^^judge which kind of stamp to use^^^^*/
-		
-		
-		//$('#item-qrcode').qrcode({render: "table", width: 48,height: 48,text: "http://www.ebay.co.uk/itm/"+ data.item_id}); // QR Code
-		
-		/*
-		$('#page_footer').click(function(){$('#page_footer').attr('contenteditable','true');});
-		 
-		$("#btn_left").text("Add");
-		$(document).ready(function(){
-		  $("#btn_left").click(function(){
-			$("#message").remove();
-			//document.getElementById("my-element").remove();
-			chrome.tabs.create({'url': chrome.extension.getURL('popup.html')}, function(tab) {});	
-		  });
-		});
-		$(document).ready(function(){
-		  $("#btn_right").click(function(){
-			chrome.tabs.query({active: true, currentWindow: true}, function (arrayOfTabs) {
-				chrome.tabs.reload(arrayOfTabs[0].id);
-			});
-		  });
-		});
-		*/
+
 	}
 	
 	
