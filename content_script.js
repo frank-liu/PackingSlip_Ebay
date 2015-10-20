@@ -1,29 +1,7 @@
 ﻿ 
 window.onload = function(e) {
 	var buyerNote=" ";
-	 
-	/*get buyer details
-	get_content_txt({
-	   var p = document.getElementById("shipping");
-	   var spans = p.getElementsByTagName("span");
-	   var text = '';
-	   for (var i = 0; i < spans.length; i++){
-		   text += spans[i].innerHTML;
-		   text+=",";
-	   }
-		
-	   '#a'.innerHTML = text;
-		alert("OK:"+text);
-	});
-	*/
 	
-	var name=document.getElementById("shippingAddressName");
-	var addr1=document.getElementById("shippingAddressLine1");
-	var addr2=document.getElementById("shippingAddressLine2");
-	var cityStateZip=document.getElementById("shippingAddressCityStateZip");
-	var country=document.getElementById("shippingAddressCountry");
-	var buyerId = document.querySelectorAll("strong.ng-binding");
-
 	
 //	var elements = document.querySelectorAll(".ng-binding");
 	var msgStatus=false;
@@ -34,6 +12,13 @@ window.onload = function(e) {
 	$("div").on("click", "tr", function(itemQuantity,itemID ,itemShippingServiceName){
        // 这里的this指向触发点击事件的tr元素
 		//$(this).parent().css('border', '2px solid #65a9d7');
+		
+		var name=document.getElementById("shippingAddressName");
+		var addr1=document.getElementById("shippingAddressLine1");
+		var addr2=document.getElementById("shippingAddressLine2");
+		var cityStateZip=document.getElementById("shippingAddressCityStateZip");
+		var country=document.getElementById("shippingAddressCountry");
+		var buyerId = document.querySelectorAll("strong.ng-binding");
 		
 		var detail=$(this).text().split("\n");
 		
@@ -57,7 +42,7 @@ window.onload = function(e) {
 		   default:
 		   ;
 		}
-		//alert(buyer_name+buyer_addr1+buyer_cityStateZip+buyer_country);
+		
 		try
 		{
 			var msg = {
