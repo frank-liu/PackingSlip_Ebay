@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Packing Slips
+		</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="popup.css" />
+		<link rel="stylesheet" type="text/css" href="./lib/stylesheets/icono.min.css" />
+				
+		<link rel="stylesheet" href="./lib/img/icon/sprite/sprite.css" />
+		
+		<script src="jquery-2.0.0.min.js"></script>
+		<script src="popup.js"></script>
+		 		
+		<!-- for auto text complete-->
+		<link href="./lib/stylesheets/jquery.ui.all.css" media="screen" rel="stylesheet" type="text/css"/>
+		<link href="./lib/stylesheets/app.css" rel="stylesheet" type="text/css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.20/jquery-ui.min.js" type="text/javascript"></script>
+		<script src="./lib/javascripts/application.js" type="text/javascript"></script>
+		<!-- sheetrock, querying, retrieving, and displaying data from Google Sheets-->
+		<script src="./lib/javascripts/sheetrock/dist/sheetrock.min.js" type="text/javascript"></script>
+		 
+		<!-- for auto text complete^^^^-->
+	</head>
+<body>
+<p id="message">加载数据中...</p>
+ 
+	
+<div id="content-info" class="content_info">
+		  <div class="buyer_addr">
+			<form class="textinput" id="input-form" action="" method="POST" target="no-target">
+			  <a>Name: </a><input class="textinput" id="buyer-name" placeholder="." name="buyer-name"></br>
+			  <a>Address: </a><input class="textinput" id="buyer-addr1" placeholder="." name="buyer-addr1"></br>
+			  <input class="textinput" id="buyer-addr2" placeholder="." name="buyer-addr2"></br>
+			  <input class="textinput" id="buyer-cityStateZip" placeholder="." name="buyer-cityStateZip"></br>
+			  <a>Postcode: </a><input class="textinput" id="buyer-postcode" placeholder="." name="buyer-postcode"></br>
+			  <input class="textinput" id="buyer-country" placeholder="." name="buyer-country"></br>
+			  <a>BuyerID: </a><input class="textinput" id="buyer-id" placeholder="." name="buyer-id"></br>
+			  <a>Item ID: </a><input class="textinput" id="item-id" placeholder="." name="item-id"></br>
+			  <a>Ref.: </a><textarea id="item-nickname"  rows="3" cols="50"></textarea></br>
+			  <!--div id="btn-printer" class="btn-icon">
+				  <button class="icon-printer" style="float: left;border:1px;background:#2ba5bb;">
+					<div class="printer-body" style="background-color: #00aa00"></div>
+					<div class="printer-top"></div>
+					<div class="printer-bottom"></div>
+					<div class="printer-file-top" style="background-color: #44dd44"></div>
+					<div class="printer-dot" style="left: 65%"></div>
+					<div class="printer-line" style="left: 50%; top: 32%; margin-left: -12%"></div>
+					<div class="printer-line" style="left: 50%; top: 42%; margin-left: -12%"></div>
+					<div class="printer-file-bottom" style="background-color: #44dd44"></div>
+				  </button>
+			  </div-->
+			   <div style="float: left;padding:0px 2px; margin:0px 5px;">
+				<span id="span-printer" class="icon icon-printer" style="zoom:0.7;"></span>
+			   </div>
+			   <div style="float: left;padding:0px 2px; margin:0px 5px;">
+				<span id="span-upload" class="icon icon-folder-upload" style="zoom:0.7;"></span> 
+			   </div>
+			   <div style="float: left;padding:0px 2px; margin:0px 5px;">
+				<span id="span-search" class="icon icon-search" style="zoom:0.7;"></span> 
+			   </div>
+			  <a id="order-status">ready </a>
+			  <button id="form-submit" type="submit">SUBMIT</button></br>
+			  <table id="switch-hitters" class="table table-condensed table-striped"></table>
+			</form> 
+			<iframe src="#" id="no-target" name="no-target" style="visibility:hidden;"></iframe>
+		  </div>	
+</div>
+ 
+
+</body>
+ 
+</html>

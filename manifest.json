@@ -1,0 +1,25 @@
+﻿{
+	"manifest_version": 2,
+	"name": "ebay.com order information",
+	"version": "0.0.1",
+	"background": { "scripts": ["jquery-2.0.0.min.js", "background.js"] },
+	"page_action": {
+		"default_icon": {
+			"19": "cnblogs_19.png",
+			"38": "cnblogs_38.png"
+		},
+		"default_title": "ebay order", 
+		"default_popup": "popup.html"
+	},
+	
+	"permissions" : ["tabs","http://localhost/"],
+	"content_security_policy": "script-src 'self' https://docs.google.com https://*.googleapis.com; object-src 'self'",
+	"content_scripts":[{
+		"matches":["http://vod.ebay.co.uk/*"],
+		"css": ["current_page.css"],
+		"js":["jquery-2.0.0.min.js", "content_script.js"],
+		"run_at": "document_start",  
+        "all_frames": true 
+	}] 
+}
+ 

@@ -1,0 +1,40 @@
+.icon {
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-image: url(sprite.svg);
+}
+.icon-folder-upload {
+	width: 32px;
+	height: 32px;
+	background-position: 0 0;
+}
+.icon-barcode {
+	width: 32px;
+	height: 32px;
+	background-position: -48px 0;
+}
+.icon-printer {
+	width: 32px;
+	height: 32px;
+	background-position: -96px 0;
+}
+.icon-search {
+	width: 32px;
+	height: 32px;
+	background-position: -144px 0;
+}
+.icon-equalizer2 {
+	width: 32px;
+	height: 32px;
+	background-position: -192px 0;
+}
+.icon-cross {
+	width: 32px;
+	height: 32px;
+	background-position: -240px 0;
+}
+.icon-checkmark {
+	width: 32px;
+	height: 32px;
+	background-position: -288px 0;
+}

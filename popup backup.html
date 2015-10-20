@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Packing Slips
+		</title>
+		<link rel="stylesheet" type="text/css" href="popup.css" />
+		<script src="jquery-2.0.0.min.js"></script>
+		<script src="popup.js"></script>
+		 		
+		<!-- for auto text complete-->
+		<link href="./lib/stylesheets/jquery.ui.all.css" media="screen" rel="stylesheet" type="text/css"/>
+		<link href="./lib/stylesheets/app.css" rel="stylesheet" type="text/css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.20/jquery-ui.min.js" type="text/javascript"></script>
+		<script src="./lib/javascripts/application.js" type="text/javascript"></script>
+		<!-- for autocomplete-->
+		 
+		<!-- place qrcode js at bottom-->
+		<script type="text/javascript" src="./lib/javascripts/qrcode/jquery.qrcode.js"></script>
+		<script type="text/javascript" src="./lib/javascripts/qrcode/qrcode.js"></script>
+	</head>
+<body>
+<p id="message">加载数据中...</p>
+ 
+	
+<div id="content-info" class="content_info">
+		<div id="item_post" class="page_stamp">
+		</div>
+		<div class="page_return_addr">
+		  <p class="rotate_addr">Return_Address:_58_Fisher_Drive_Paisley_PA12TR_UK.</p>
+		</div>
+		<div class="page_addr">
+		  <div class="buyer_addr">
+			<p id="to" style="text-align:left;">To:</p>
+			<img class="icon" src="./img/user24.png" alt="">
+			<p id="buyer-name">&nbsp; </p>
+			<img class="icon" src="./img/mailboxbk24.png" alt="">
+			<a id="buyer-addr1">&nbsp; </a></br>
+			<a id="buyer-addr2">&nbsp; </a></br>
+			<a id="buyer-cityStateZip">&nbsp; </a></br>
+			<a id="buyer-country">&nbsp; </a>
+			 
+		  </div>
+		  <div id="item-qrcode" class="qrcode">
+		  </div>
+			
+		  <div class="return_addr">
+			<p id="from" style="text-align:right;padding: 5px 5px;">From:</p>
+			<p id="return-addr1">58 Fisher Drive,</br>Paisley, PA1 2TR,</br>United Kingdom. </p>
+			
+		  </div>
+		</div>
+
+		<div id="page_footer" class="page_item">
+			<div><hr /></div>
+		  <div class="item">
+			<a id="buyer-id">&nbsp; </a>&nbsp;&nbsp;(<a id="item-id">&nbsp; </a>)
+			</br>
+			<a id="item-qty">&nbsp; </a></br>
+			<textarea id="item-nickname"  rows="2" cols="50"></textarea>
+		  </div>
+		</div>
+</div>
+ 
+<div>
+<a href="#" id="btn_left" class="button"/>Add</a>
+<a href="#" id="btn_right" class="button"/>Refresh</a>
+</div>
+</body>
+ 
+</html>
